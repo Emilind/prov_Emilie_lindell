@@ -12,8 +12,11 @@ namespace Prov_grundlaggande_modellering_Emilie_TE17A
         {
             Books firstbook = new Books();
             Kunder firstkund = new Kunder();
+            Console.WriteLine("What is the costumers name?");
+            string costumname = Console.ReadLine();
+            costumname = firstkund.GetcostName();
 
-            Console.WriteLine("What books would you like add?");
+            Console.WriteLine("Hello" + firstkund.GetcostName() + "What books would you like add?");
 
            string inputbook = Console.ReadLine();
 

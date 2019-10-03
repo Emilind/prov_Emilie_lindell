@@ -8,5 +8,10 @@ namespace Prov_grundlaggande_modellering_Emilie_TE17A
 {
     class Kunder
     {
+        private string costumername = "";
+        public string GetcostName()
+        {
+            return costumername;
+        }
     }
 }
