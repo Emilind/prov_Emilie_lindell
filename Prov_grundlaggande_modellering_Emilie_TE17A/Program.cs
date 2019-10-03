@@ -12,9 +12,11 @@ namespace Prov_grundlaggande_modellering_Emilie_TE17A
         {
             Books firstbook = new Books();
             Kunder firstkund = new Kunder();
+            //För att "koppla" klasserna till main
             Console.WriteLine("What is the costumers name?");
             string costumname = Console.ReadLine();
             costumname = firstkund.GetcostName();
+            //För att hämta den privata stringen från klassen kund genom en public string
 
             Console.WriteLine("Hello" + firstkund.GetcostName() + "What books would you like add?");
 
@@ -25,21 +27,21 @@ namespace Prov_grundlaggande_modellering_Emilie_TE17A
 
             string input = Console.ReadLine();
             Book.Add(input);
-
+            //För att skapa en lista så att spelaren kan lägga till egna saker i listan
             foreach (var user in Book)
             {
                 Console.WriteLine(user);
 
-            }
+            }//för varje gångr "user" sker i "book"
             Console.WriteLine("Sounds good, these are books you have chosen to include " + input);
             Console.WriteLine("Here is one of the book and the info about it, bur first whats the name of the book?");
             string thename = "";
             thename = firstbook.GetName();
-
+            //För att hämta stringen name som är privat från klassen books
             
             
             Console.WriteLine("Name: " + firstbook.GetName() +" Price:" +  firstbook.price + "Rarity:" + firstbook.rarity + "Actual value:" + firstbook.actualvalue + "Cursed:" + firstbook.cursed);
-            Console.WriteLine("would you like to purchase this book?");
+            Console.WriteLine("would you like to purchase this book?");// I cw:n ovan så skriver den ut alla de slumpade värdena från klassen books
             string purchase = "";
             if(purchase == "yes")
             {
